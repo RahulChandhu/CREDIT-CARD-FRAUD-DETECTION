@@ -13,7 +13,7 @@ import streamlit as st
 import joblib
 from prediction_helper import load_model, prepare_single_input, predict_batch, preprocess, feature_engineer
 
-MODEL_PATH = "models/best_model.joblib"
+MODEL_PATH = "best_model.joblib"
 
 st.set_page_config(page_title="Credit Card Fraud Detector", layout="wide")
 
@@ -122,3 +122,4 @@ st.sidebar.info(
 )
 
 st.sidebar.markdown("**Notes:** The app expects the model file at `models/best_model.joblib`.")
+
